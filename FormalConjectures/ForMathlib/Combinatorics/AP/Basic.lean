@@ -59,7 +59,7 @@ theorem eq (h : s.IsAPOfLengthWith l a d) : s = {a + n • d | (n : ℕ) (_ : n 
 if `s` is empty. -/
 @[simp]
 theorem zero : s.IsAPOfLengthWith 0 a d ↔ s = ∅ := by
-  simpa [Set.IsAPOfLengthWith] using fun _ => by aesop
+  simp [Set.IsAPOfLengthWith]
 
 /-- An arithmetic progression with first term `a` and difference `d` is of length one if and only
 if `s` is a singleton. -/

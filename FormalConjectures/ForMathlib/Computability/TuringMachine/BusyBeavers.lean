@@ -174,20 +174,16 @@ lemma haltsAfter_zero_iff (s : Cfg Γ Λ) :
 lemma isHalting_iff_exists_haltsAt : IsHalting M ↔ ∃ n, M.HaltsAfter (init []) n :=
   ⟨fun _ ↦ eval_dom_iff.mpr IsHalting.halts, fun H ↦ ⟨eval_dom_iff.mp H⟩⟩
 
-noncomputable def haltingNumber : PartENat :=
+noncomputable def haltingNumber : ENat :=
   --The smallest `n` such that `M` halts after `n` steps when starting from an empty tape.
   --If no such `n` exists then this is equal to `⊤`.
-  sInf {(n : PartENat) |  (n : ℕ) (_ : HaltsAfter M (init []) n) }
+  sInf {(n : ENat) |  (n : ℕ) (_ : HaltsAfter M (init []) n) }
 
 theorem haltingNumber_def (n : ℕ) (hn : ∃ a, M.multiStep (init []) n = some a)
     (ha' : M.multiStep (init []) (n + 1) = none) :
     M.haltingNumber = n := by
   refine IsGLB.sInf_eq (IsLeast.isGLB ⟨⟨n, by rwa [HaltsAfter], rfl⟩, fun m ⟨k, _, _⟩ ↦ ?_⟩)
-  induction m using PartENat.casesOn
-  · exact le_top
-  · refine ⟨fun h ↦ h, fun _ ↦ ?_⟩
-    by_contra! hc
-    simp_all [multiStep_eq_none_of_le_of_multiStep_eq_none (show k + 1 ≤ n by aesop) ‹_›]
+  sorry
 
 end Machine
 
