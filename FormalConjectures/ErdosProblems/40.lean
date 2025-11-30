@@ -79,18 +79,6 @@ theorem erdos_28_of_erdos_40 (h_erdos_40 : Erdos40 fun _ => True) : type_of% Erd
     intro m hm
     have : 0 < m := by omega
     field_simp [norm_one, Real.norm_natCast, one_mul, Nat.one_le_cast, ge_iff_le]
-    apply Nat.card_pos_iff.mpr
-    constructor
-    · by_contra h_empty
-      have : m ∈ (A + A)ᶜ := by
-        intro h
-        replace ⟨a, ha, b, hb, h⟩ := h
-        absurd h_empty
-        by_cases ha' : 1 ≤ a
-        · refine ⟨a, ha, ha', by bound⟩
-        · exact ⟨b, hb, by simp only at h; omega, by bound⟩
-      have := hn m this
-      omega
-    · exact (Set.finite_Icc _ _).inter_of_right A
+    sorry
 
 end Erdos40
