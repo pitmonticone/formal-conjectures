@@ -17,21 +17,25 @@ limitations under the License.
 import FormalConjectures.Util.ProblemImports
 
 /-!
-# Erdős Problem 48
+# Erdős Problem 30
 
-*Reference:* [erdosproblems.com/48](https://www.erdosproblems.com/48)
+*Reference:* [erdosproblems.com/30](https://www.erdosproblems.com/30)
 -/
-
-open scoped ArithmeticFunction
-
-namespace Erdos48
 
 /--
-Are there infinitely many integers $n, m$ such that $ϕ(n) = σ(m)$?
+Let $h(N)$ be the maximum size of a Sidon set in $\{1, \dots, N\}$.
 -/
-@[category research solved, AMS 11]
-theorem erdos_48 :
-    {(n, m) : ℕ × ℕ | n.totient = σ 1 m}.Infinite ↔ answer(True) := by
+noncomputable abbrev h (N : ℕ) : ℕ := Finset.maxSidonSubsetCard (Finset.Icc 1 N)
+
+
+open Filter
+
+/--
+Is it true that, for every $\varepsilon > 0$, $h(N) = \sqrt N + O_{\varespilon}(N^\varespilon)
+-/
+@[category research open, AMS 11]
+theorem erdos_30 :
+    (∀ᵉ (ε > 0), (fun N => h N - (N : Real).sqrt) =O[atTop] fun N => (N : ℝ)^(ε : ℝ)) := by
   sorry
 
-end Erdos48
+-- TODO(firsching): add the various known bounds as variants.

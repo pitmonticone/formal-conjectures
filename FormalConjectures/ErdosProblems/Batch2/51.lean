@@ -37,8 +37,7 @@ theorem erdos_51 :
     (∃ A : Set ℕ, ∃ n : A → ℕ,
       A.Infinite ∧
       (∀ a : A, IsLeast (φ ⁻¹' {(a : ℕ)}) (n a)) ∧
-      Tendsto (fun a : A => (n a : ℝ) / (a : ℝ)) atTop atTop)
-    ↔ answer(sorry) := by
+      Tendsto (fun a : A => (n a : ℝ) / (a : ℝ)) atTop atTop) := by
   sorry
 
 /-

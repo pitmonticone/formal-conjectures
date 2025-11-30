@@ -50,7 +50,7 @@ $\liminf \frac{|A \cap \{1, \dotsc, N\}|}{N^{1/2}} > 0$ ?
 @[category research open, AMS 11]
 theorem erdos_12.parts.i : (∃ (A : Set ℕ), IsGood A ∧
     (0 : ℝ) < Filter.atTop.liminf
-      (fun N => (A.interIcc 1 N).ncard / (N : ℝ).sqrt)) ↔ answer(sorry) := by
+      (fun N => (A.interIcc 1 N).ncard / (N : ℝ).sqrt)) := by
   sorry
 
 /--
@@ -61,7 +61,7 @@ with $|A \cap \{1, \dotsc, N\}| < N^{1−c}$?
 -/
 @[category research open, AMS 11]
 theorem erdos_12.parts.ii : (∃ c > (0 : ℝ), ∀ (A : Set ℕ), IsGood A →
-  {N : ℕ| (A.interIcc 1 N).ncard < (N : ℝ) ^ (1 - c)}.Infinite) ↔ answer(sorry) := by
+  {N : ℕ| (A.interIcc 1 N).ncard < (N : ℝ) ^ (1 - c)}.Infinite) := by
   sorry
 
 /--
@@ -70,7 +70,7 @@ such that $a \mid (b+c)$ and $b,c > a$. Is it true that $∑_{n \in A} \frac{1}{
 -/
 @[category research open, AMS 11]
 theorem erdos_12.parts.iii :
-    (∀ (A : Set ℕ), IsGood A → Summable (fun (n : A) ↦ (1 / n : ℝ))) ↔ answer(sorry) := by
+    (∀ (A : Set ℕ), IsGood A → Summable (fun (n : A) ↦ (1 / n : ℝ))) := by
   sorry
 
 /--

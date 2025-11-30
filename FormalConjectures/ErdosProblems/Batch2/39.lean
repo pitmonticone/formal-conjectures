@@ -34,8 +34,7 @@ for all $\varepsilon > 0$?
 @[category research open, AMS 11]
 theorem erdos_39 : (∃ (A : Set ℕ), A.Infinite ∧ IsSidon A ∧
     ∀ᵉ  (ε  > (0 : ℝ)),
-    (· ^ (1 / 2 - ε) : ℕ → ℝ) =O[atTop] fun N => (((Set.Icc 1 N) ∩ A).ncard : ℝ))
-    ↔ answer(sorry) := by
+    (· ^ (1 / 2 - ε) : ℕ → ℝ) =O[atTop] fun N => (((Set.Icc 1 N) ∩ A).ncard : ℝ)) := by
   sorry
 
 --TODO(firsching): add the various known bounds as variants.
