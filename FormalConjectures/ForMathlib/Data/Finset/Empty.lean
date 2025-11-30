@@ -16,10 +16,10 @@ limitations under the License.
 
 import Mathlib.Data.Finset.Empty
 
-@[simp]
-theorem Finset.univ_finset_of_isEmpty {α : Type*} [h : IsEmpty α] :
-    (Set.univ : Set (Finset α)) = {∅} := by
-  ext S
-  rw [Set.mem_singleton_iff, eq_true (Set.mem_univ S), true_iff]
-  ext a
-  exact IsEmpty.elim h a
+-- @[simp]
+-- theorem Finset.univ_finset_of_isEmpty {α : Type*} [h : IsEmpty α] :
+--     (Set.univ : Set (Finset α)) = {∅} := by
+--   ext S
+--   rw [Set.mem_singleton_iff, eq_true (Set.mem_univ S), true_iff]
+--   ext a
+--   exact IsEmpty.elim h a

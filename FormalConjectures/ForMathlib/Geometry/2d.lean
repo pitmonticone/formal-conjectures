@@ -18,6 +18,7 @@ import Mathlib.LinearAlgebra.Orientation
 import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Geometry.Euclidean.Angle.Oriented.Affine
 import Mathlib.Geometry.Euclidean.Triangle
+import Mathlib.Tactic
 
 import FormalConjectures.ForMathlib.Logic.Equiv.Fin.Rotate
 import FormalConjectures.ForMathlib.Data.Set.Triplewise
