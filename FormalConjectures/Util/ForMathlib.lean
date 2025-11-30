@@ -49,8 +49,8 @@ import FormalConjectures.ForMathlib.Data.Real.Constants
 import FormalConjectures.ForMathlib.Data.Set.Density
 import FormalConjectures.ForMathlib.Data.Set.Triplewise
 import FormalConjectures.ForMathlib.Data.ZMod.PerfectDifferenceSet
-import FormalConjectures.ForMathlib.Geometry.«2d»
-import FormalConjectures.ForMathlib.Geometry.«3d»
+import FormalConjectures.ForMathlib.Geometry.G2d
+import FormalConjectures.ForMathlib.Geometry.G3d
 import FormalConjectures.ForMathlib.Geometry.Euclidean
 import FormalConjectures.ForMathlib.LinearAlgebra.SpecialLinearGroup
 import FormalConjectures.ForMathlib.Logic.Equiv.Fin.Rotate
