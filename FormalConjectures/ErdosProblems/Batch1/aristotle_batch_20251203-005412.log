@@ -1,0 +1,14 @@
+2025-12-03 00:54:12,330 INFO - root - Detailed logs will be written to /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/aristotle_batch_20251203-005412.log
+2025-12-03 00:54:12,330 INFO - root - Starting batch: folder=/Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1 concurrency=5 poll=15 force=False no_retry=False summary_min=5.0s summary_max=600.0s
+2025-12-03 00:54:12,436 INFO - root - Skipping 10 files with existing Aristotle outputs; rerun with --force to reprocess.
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/1.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/10.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/11.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/12.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/14.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/17.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/3.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/4.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/6.lean
+2025-12-03 00:54:12,437 DEBUG - root - Skipping already solved file /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1/9.lean
+2025-12-03 00:54:12,437 WARNING - root - No .lean files found in /Users/lorenzo/LEAN/formal-conjectures/FormalConjectures/ErdosProblems/Batch1
